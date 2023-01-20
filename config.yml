@@ -1,0 +1,47 @@
+database:
+  host: "127.0.0.1"
+  port: 3306
+  database: "Tokens"
+  table: "data"
+  user: "root"
+  password: ""
+
+command:
+  tokens:
+    prefix: "&7[&bTOKENS&7] &r"
+    invalid-syntax:
+    - "&7[&bTOKENS&7] &cInvalid syntax, please do &4/tokens help &c!"
+    permission:
+      - "&7[&bTOKENS&7] &cYou don't have permission !"
+    console:
+      - "&cConsole don't have tokens (i think) !"
+    error:
+      - "&7[&bTOKENS&7] &cUnexpected error !"
+    help:
+      - ""
+      - "&cTokens help menu:"
+      - "&7/tokens help &8➼ &dDisplay help menu."
+      - "&7/tokens get [player] &8➼ &dGet player token amount."
+      - "&7/tokens add <player> <amount> &8➼ &dGet player token amount."
+      - "&7/tokens remove <player> <amount> &8➼ &dGet player token amount."
+      - "&7/tokens set <player> <amount> &8➼ &dGet player token amount."
+      - ""
+    get-tokens-self:
+      - "&7[&bTOKENS&7] &7You currently have &b(=) &7tokens !"
+    get-tokens-other:
+      - "&7[&bTOKENS&7] &e[=] &7have &b(=) &7tokens !"
+    set-tokens:
+      invoker:
+      - "&7[&bTOKENS&7] &e[=]'s &atokens have been defined to &e(=) &a!"
+      receiver:
+      - "&7[&bTOKENS&7] &7You have now &e(=) &atokens !"
+    add-tokens:
+      invoker:
+      - "&7[&bTOKENS&7] &e[=]'s &ahave now &e(=) &atokens !"
+      receiver:
+      - "&7[&bTOKENS&7] &7You have now &e(=) &atokens !"
+    remove-tokens:
+      invoker:
+      - "&7[&bTOKENS&7] &e[=]'s &ahave now &e(=) &atokens !"
+      receiver:
+      - "&7[&bTOKENS&7] &7You have now &e(=) &atokens !"
