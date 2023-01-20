@@ -1,0 +1,7 @@
+name: Tokens
+version: 1.0
+author: SN4KDEV
+main: fr.sn4kdev.tokens.MainClass
+commands:
+  tokens:
+    description: Tokens main command
